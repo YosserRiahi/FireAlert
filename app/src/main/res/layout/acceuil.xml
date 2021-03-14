@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yosser.easyp.acceuil">
+
+    <TextView
+        android:id="@+id/link_signup2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="121dp"
+        android:gravity="center"
+        android:text="Or sign up and join us"
+        android:textSize="16dip" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:hint="Example@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <EditText
+        android:hint="*********"
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pass"
+        android:layout_alignStart="@+id/Email"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="212dp"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp" />
+
+    <TextView
+        android:id="@+id/email"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="118dp"
+        android:text="Email"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="63dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/link_signup"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="230dp"
+        android:gravity="center"
+        android:text="No account yet? Create one"
+        android:textSize="16dip" />
+
+    <Button
+        android:id="@+id/Signin"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/link_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-230dp"
+        android:background="@mipmap/register"
+        android:onClick="Register" />
+
+    <Button
+        android:id="@+id/wtv"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/link_signup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-121dp"
+        android:background="@mipmap/login"
+        android:onClick="login" />
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="fill_parent"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/wtv"
+        android:background="@null"
+        android:onClick="reset"
+        android:text="forgot password ?"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

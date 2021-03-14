@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yosser.e_parking.MainActivity">
+
+    <TextView
+
+        android:id="@+id/textView1"
+        android:layout_width="249dp"
+        android:layout_height="149dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/welcome"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="317dp"
+        android:layout_height="79dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:text="
+        EasyParking was developed to provide  parking availability to use with possibility of a real time information system
+"
+        android:textColor="#F81894"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/buttonstart"
+        android:layout_width="183dp"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
+        android:background="@drawable/start"></Button>
+
+
+</RelativeLayout>
